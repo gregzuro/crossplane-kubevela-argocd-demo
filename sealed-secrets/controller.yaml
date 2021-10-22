@@ -177,7 +177,8 @@ spec:
         name: sealed-secrets-controller
     spec:
       containers:
-      - args: []
+      - args:
+        - "--update-status"
         command:
         - controller
         env: []
